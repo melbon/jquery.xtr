@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="wrapper">
+    <div xtr>Welcome</div>
+    <div xtr>Hello</div>
+    <div xtr data-xtr-key="bye">Good Bye</div>
+
+    <label for="lang">Current language</label>
+    <select name="lang" id="lang">
+        <option value="reset">EN</option>
+        <option value="de">DE</option>
+        <option value="fr">FR</option>
+        <option value="es">ES</option>
+    </select>
+</div>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="../jquery.xtr.min.js"></script>
+<script>
+    var data = {
+        "Welcome": {
+            de: "Willkommen",
+            fr: "Bienvenue",
+            es: "Bienvenido"
+        },
+        "bye": {
+            de: "Auf Wiedersehen",
+            fr: "Au revoir",
+            es: "Adiós"
+        },
+        "Hello": {
+            de: "Hallo",
+            fr: "Allô ?",
+            es: '¡Hola!'
+        }
+    };
+
+    $('body').xtr({t: data});
+
+    $('#lang').on('change', function() {
+         $('body').data('plugin_xtr').lang($(this).val());
+    });
+</script>
+</body>
+</html>
