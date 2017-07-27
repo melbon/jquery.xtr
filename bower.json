@@ -1,0 +1,23 @@
+{
+  "name": "jquery.xtr",
+  "main": "jquery.xtr.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/melbon/jquery.xtr",
+  "description": "This plugin translate your page client side without page refresh.",
+  "authors": [
+    "melbon <mario@vidov.it>"
+  ],
+  "keywords": [
+    "translation",
+    "jquery",
+    "translate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
