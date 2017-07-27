@@ -10,7 +10,7 @@ or
 bower install xtr
 ```
 ## Usage
-1. add **xtr** attribute or **data-xtr-key="\<translation\>"** to your elements
+1. add **xtr** attribute or **data-xtr-key="\<translation key\>"** to your elements
 ```html
 <div xtr>Welcome</div>
 ```
