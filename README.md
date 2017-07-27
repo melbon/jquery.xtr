@@ -65,7 +65,7 @@ change new language
 ```javascript
 $('body').data('plugin_xtr').lang(<languge>);
 ```
-### lang('reset')
+#### lang('reset')
 set default language
 ```javascript
 $('body').data('plugin_xtr').lang('reset');
