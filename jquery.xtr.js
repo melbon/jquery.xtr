@@ -1,3 +1,12 @@
+/*!
+ * July 2017
+ * xtr 1.0.0
+ * @author Mario Vidov
+ * @url http://vidov.it
+ * @twitter MarioVidov
+ * MIT license
+*/
+
 (function($) {
     var pluginName = 'xtr';
 
