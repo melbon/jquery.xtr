@@ -53,7 +53,7 @@
     Plugin.prototype.set = function(index) {
         var $el = $('[' + config.langKey + '="' + index + '"]');
         var original = $el && $el.attr(config.langOrig) || index;
-        return (this.t[index] && this.t[index][this.l]) ? this.t[index][this.l] : original;
+        return (this.t && this.t[index] && this.t[index][this.l]) ? this.t[index][this.l] : original;
     };
 
     Plugin.prototype.init = function() {
